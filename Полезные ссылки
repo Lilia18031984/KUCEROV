@@ -1,0 +1,30 @@
+
+---
+
+## Инструкция по работе с Git
+
+```bash
+# Инициализация репозитория
+git init
+
+# Добавление файлов
+git add main.py .gitignore README.md requirements.txt
+
+# Создание коммита
+git commit -m "Initial commit: Random Quote Generator application"
+
+# Добавление удалённого репозитория
+git remote add origin https://github.com/your-username/random-quote-generator.git
+
+# Отправка изменений
+git push -u origin main
+
+# Просмотр статуса
+git status
+
+# Просмотр истории коммитов
+git log --oneline --graph
+
+# Добавление тега для версии 1.0
+git tag -a v1.0 -m "First stable release"
+git push origin v1.0
